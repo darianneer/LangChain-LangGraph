@@ -1,0 +1,154 @@
+****************Evaluation Inputs and Outputs***************
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*****Input Prompt 1:*****
+You are a financial analyst. Summarize the following quarterly report into a 150-word executive summary. Include a table of key metrics(Revenue, EPS, Growth%) and a section listing top risks and opportunities. Ensure all the data is factual and derived fromt the context provided.
+
+*****Output Response 1:*****
+- Final Score: 8.8
+- Scores of each quality criterion:
+    1.  Clarity: 9
+    2.  Specificity/Details: 9
+    3.  Context: 7
+    4.  Output Format & Constraints: 9
+    5.  Persona Defined: 10
+
+- Short Explanation:
+    The prompt is very clear, specific, and effectively defines a persona and output constraints. It clearly outlines the task, the required components of the summary, and a word count. The main area for improvement is providing more context regarding the target audience for the executive summary, which could influence the tone and focus.
+
+- 2-3 suggestions to improve the prompt:
+    1.  **Specify the target audience:** Add who the executive summary is intended for (e.g., "for board members," "for potential investors," "for internal stakeholders") to help tailor the tone and emphasis of the summary.
+    2.  **Clarify table format:** While "table of key metrics" is good, specifying if it should include year-over-year or quarter-over-quarter comparisons, or a specific number of rows/columns, could add more precision.
+    3.  **Suggest a tone:** While the persona implies a professional tone, explicitly stating "maintain a professional and objective tone" could reinforce this.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*****Input Prompt 2:*****
+You are a project manager drafting a client email. Write a formal emails summarizing project progress, upcoming milestones, and request feedback. Include placeholders for [Client Name], [Project Name], and [Deadline]. Add a bullet list of action items.
+
+*****Output Response 2:*****
+- Final Score: 8.4
+- Scores of each quality criterion:
+    1. Clarity: 9
+    2. Specificity/Details: 8
+    3. Context: 7
+    4. Output Format & Constraints: 8
+    5. Persona Defined: 10
+
+- Short Explanation:
+The prompt is clear, effectively defines a persona, and outlines the core task of drafting a formal client email. It specifies key content areas (progress, milestones, feedback) and includes basic formatting requirements like placeholders and a bullet list.
+
+- 2-3 suggestions to improve the prompt:
+    1.  **Enhance Specificity for Content**: Ask for more detail regarding what "project progress" and "upcoming milestones" should entail (e.g., "summarize key achievements, current status, and any challenges for progress; outline next steps, responsible parties, and target dates for milestones").
+    2.  **Refine Feedback Request**: Specify the *type* of feedback desired or a call to action for it (e.g., "request feedback on specific deliverables or overall satisfaction, suggesting a follow-up call to discuss").
+    3.  **Suggest Length/Detail Level**: Add a constraint on the email's length or level of detail (e.g., "write a concise, professional email" or "provide a detailed update").
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*****Input Prompt 3:*****
+You are a HR compliance auditor. Review the following policy text and identify missing compliance clauses, ambiguous language, and suggest improvements. Return output in JSON format with keys: issues, severity, recommendations. Cite references where applicable. Context: {policy_text}
+
+*****Output Response 3:*****
+- Final Score: 7.6/10
+- Scores of each quality criterion:
+    1.  Clarity: 9/10
+    2.  Specificity/Details: 6/10
+    3.  Context: 5/10
+    4.  Output Format & Constraints: 8/10
+    5.  Persona Defined: 10/10
+
+- Short Explanation:
+    The prompt effectively defines a persona and specifies a clear output format. However, it significantly lacks crucial details regarding the specific compliance framework or jurisdiction (e.g., US federal, GDPR, specific state laws) the policy should be audited against. It also misses important organizational context (industry, company size, location) that would influence compliance requirements.
+
+- 2-3 suggestions to improve the prompt:
+    1.  **Specify Compliance Framework/Jurisdiction**: Add details about the specific laws, regulations, or geographical jurisdictions the policy needs to comply with (e.g., "Review against US federal and California state labor laws," or "Review for GDPR compliance for a company operating in the EU").
+    2.  **Provide Organizational Context**: Include information about the company's industry, size, and geographical locations to help the auditor tailor the compliance review more accurately.
+    3.  **Define Severity Levels**: Clarify what constitutes "severity" for the output (e.g., "Severity should be categorized as Critical, High, Medium, Low based on legal risk and potential impact on the organization").
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*****Input Prompt 4:*****
+You are a meeting assistant. Summarize the following transcript into structured Markdown with sections: Decisions and Action Items. For each action item, include owner, deadline, and confidence score. Context: {transcript_text}
+
+*****Output Response 4:*****
+- Final Score: 7.8
+- Scores of each quality criterion:
+    1. Clarity: 9
+    2. Specificity/Details: 7
+    3. Context: 6
+    4. Output Format & Constraints: 7
+    5. Persona Defined: 10
+
+- Short Explanation: The prompt clearly defines a persona and a primary goal. It specifies key output sections and some details for action items. However, it could benefit from more specific instructions regarding the format of the action item details (e.g., confidence score scale, date format), the desired length/conciseness of the summary, and additional context about the meeting or the purpose of the summary.
+
+- 2-3 suggestions to improve the prompt:
+    1.  **Enhance Specificity for Action Items:** Clarify the expected format for "owner," "deadline" (e.g., YYYY-MM-DD), and "confidence score" (e.g., a scale of 1-5, or high/medium/low).
+    2.  **Add Output Length/Conciseness:** Specify the desired length or level of detail for the summary (e.g., "a concise summary," "a comprehensive summary," "no more than 200 words").
+    3.  **Provide More Contextual Information:** If available, include details about the meeting's purpose, key attendees, or the project discussed, as this can help the AI prioritize information for the summary.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*****Input Prompt 5:*****
+You are a market research analyst. Generate a market analysis brief from the provided articles and reports. Include a SWOT analysis, top 3 trends with citations, and a narrative summary. Output JSON with keys: SWOT, trends, citations, and a separate narrative summary. Context: {documents}
+
+*****Output Response 5:*****
+- Final Score: 8.0
+- Scores of each quality criterion:
+    - Clarity: 9/10
+    - Specificity/Details: 7/10
+    - Context: 6/10
+    - Output Format & Constraints: 8/10
+    - Persona Defined: 10/10
+
+- Short Explanation:
+The prompt is clear, effectively defines a persona, and specifies a precise output format with required keys. It clearly outlines the components of the market analysis brief. However, it could be more specific regarding the depth or length of the analysis sections (SWOT, trends, summary) and could provide more context about the target audience or the specific purpose of the brief.
+
+- 2-3 suggestions to improve the prompt:
+1.  **Enhance Context and Purpose:** Specify the target audience for the brief (e.g., "for executive leadership," "for a product launch team") and the overall objective (e.g., "to inform strategic planning," "to assess market viability for a new product").
+2.  **Add Specificity to Content:** Provide guidelines for the depth or length of each section (e.g., "SWOT analysis with 3-5 points per quadrant," "narrative summary of 200-300 words," "trends should include market size, growth rate, and impact").
+3.  **Clarify Document Expectations:** Briefly describe the *types* of articles and reports expected in `{documents}` (e.g., "financial reports, industry news, competitor analysis, consumer surveys") to guide the user on what to provide.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*****Input Prompt 6:*****
+You are a professional content writer and coding expert. Explain everything clearly but keep it short. Make sure it works perfectly in all cases and follows best practices. Also optimize it and make it more readable and efficient.
+
+*****Output Response 6:*****
+- Final Score: 5.0
+- Scores of each quality criterion:
+    1.  Clarity: 7/10
+    2.  Specificity/Details: 2/10
+    3.  Context: 1/10
+    4.  Output Format & Constraints: 5/10
+    5.  Persona Defined: 10/10
+
+- Short Explanation: The prompt effectively defines a persona and sets some general quality expectations for the output (clear, short, optimized). However, it critically lacks specificity regarding the actual topic or task to be performed, the target audience, and concrete output format details, making it very difficult for an AI to generate a relevant or useful response.
+
+- 2-3 suggestions to improve the prompt:
+    1.  **Specify the topic/task**: Clearly state *what* needs to be explained or written about (e.g., "Explain the concept of asynchronous programming in JavaScript," or "Provide a code example for a simple 'Hello World' web server using Python Flask").
+    2.  **Define the target audience**: Indicate who the explanation is for (e.g., "for beginners," "for experienced developers," "for a non-technical manager") to tailor the complexity and vocabulary.
+    3.  **Add concrete output format/length constraints**: Instead of "keep it short," specify a word count (e.g., "under 250 words"), paragraph limit (e.g., "in 3-4 paragraphs"), or desired structure (e.g., "using markdown headings and bullet points, including a small code snippet").
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*****Input Prompt 7:*****
+You are an expert developer and reviewer. Analyze my code, fix all issues, improve performance, and rewrite it if needed. Make it clean, scalable, and perfect. Add comments and explanations but don’t make it too long. Ensure it handles all edge cases and works everywhere.
+
+*****Output Response 7:*****
+- Final Score: 4.8/10
+- Scores of each quality criterion:
+    - Clarity: 8/10
+    - Specificity/Details: 2/10
+    - Context: 1/10
+    - Output Format & Constraints: 3/10
+    - Persona Defined: 10/10
+
+- Short Explanation: The prompt successfully defines a clear persona and outlines general goals for code analysis and improvement. However, it critically lacks specificity regarding the actual code to be analyzed, its context, and concrete definitions for terms like "perfect," "scalable," or "works everywhere." The output constraints are also quite vague.
+
+- 2-3 suggestions to improve the prompt:
+    1.  **Provide the actual code:** This is the most crucial missing element. Without the code, the prompt is unactionable.
+    2.  **Add context about the code:** Specify the programming language, framework, purpose of the code, current known issues, and target environment/audience.
+    3.  **Define "perfect," "scalable," and "everywhere" more concretely:** Provide specific metrics, performance targets, or target platforms/environments. Clarify what "not too long" means for explanations (e.g., max X paragraphs, focus on key changes).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
